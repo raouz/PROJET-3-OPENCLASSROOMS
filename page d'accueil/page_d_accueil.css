@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2? family=Dancing+Script&display=swap');
+
+body{
+    margin:0px
+}
+
+#logo{
+    height: 79px;
+    box-shadow:0px 3px 1px rgba(0, 0, 0, 0.432) ;
+    box-shadow: 0px 6px 18px rgb(0 0 0 / 23%);
+    
+
+}
+#ville{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#logo h1{
+    display: flex;
+    justify-content: center;
+    font-family: "Dancing Script" ,"cursive";
+    font-size: 2.5em;
+
+    
+
+}
+#symbole_localisation{
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+#ville_localisation{
+    display: flex;
+    justify-content: center;
+    height: 59px;
+    background-color: #f3f3f3;
+    margin-top: 3px;
+    
+}
+#titre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+#selection_de_restaurant p{
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 1.1em;
+}
+#selection_de_restaurant #bouton{
+    display: flex;
+    justify-content: center;
+}
+#explorer{
+    height: 43px;
+    width: 241px;
+    border-radius: 21px 21px 21px 21px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  
+         background: linear-gradient( 
+            0deg
+             , #9256dcee 41%, rgb(255, 121, 217) 87%);
+
+         box-shadow: 3px 3px 5px rgb(0 0 0 / 26%);
+         cursor: pointer;
+}
+#explorer:hover{
+    
+     background: linear-gradient( 
+        0deg
+         , #9356dcd1 41%, rgb(255 121 218 / 95%) 87%);
+         
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);
+}
+#elements_de_fonctionnement{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6px;
+}
+
+.element{
+    display: flex;
+    width: 394px;
+    border-radius: 17px 17px 17px 17px;
+    position: relative;
+    justify-content: space-around;
+    height: 60px;
+    margin-left: 34px;
+    background-color: #f6f6f6;
+    box-shadow: 5px 5px 6px #e3e2e2;
+}
+
+.cercle{
+    background-color: #9356DC;
+    width: 25px;
+    border-radius: 50%;
+    height: 26px;
+    position: absolute;
+    left: -15px;
+    top: 18px;
+}
+    
+
+.cercle p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: -12px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+}
+#fonctionnement h2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left:30px;
+    
+}
+
+
+.symbole{
+    position: absolute;
+    top: 22px;
+    left: 16px;
+    color: #665e60;
+}
+
+
+.p_symbole p{
+    position: absolute;
+    left: 43px;
+    top: 4px;
+    font-size: 1.1em;
+    color: #665e60;
+}
+
+
+/*-----------------------------------------------Restaurants---------------------*/
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#Restaurants{
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 99px;
+    background-color: #f6f6f6;
+    
+    
+}
+.card{
+    width: 46%;
+    border: 2px solid black;
+    position: relative;
+    margin: 1%;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    
+}
+
+.image_restaurant img{
+    height: 188px;
+    border-radius: 13px 13px 0px 0px;
+} 
+.description{
+    height: 82px;
+    background-color: white;
+    border-radius: 0px 0px 13px 13px;
+}
