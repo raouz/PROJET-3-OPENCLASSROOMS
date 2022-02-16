@@ -8,6 +8,17 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+header a{
+    width: 100px;
+}
+.fa-square-arrow-left{
+    font-size: 1.7em;
+    color: black;
+    position:absolute;
+    top: 26px;
+    left: 26px;
 }
 #logo{
     display: flex;
@@ -110,58 +121,7 @@ section{
     animation: apparition_1 300ms linear 100ms  forwards;
     
 }
-.cercle_validation{
-    background-color: #99e2d0;
-    width: 0px;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 10;
-    transition: all 0.5s;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.fa-check-circle{
-    transform: rotate(180deg);
-    color: white;
-    font-size:1.7em ;
-    transition: all 0.8s;
-    
-}
-
-.selections_menu_entrées:hover .fa-check-circle{
-    transform: rotate(360deg);
-}
-
-
-.selections_menu_entrées:hover .cercle_validation {
-    width: 17%;
-}
-
-
-.selections_menu_plats:hover .fa-check-circle{
-    transform: rotate(360deg);
-}
-
-
-.selections_menu_plats:hover .cercle_validation {
-    width: 17%;
-}
-
-.selections_menu_desserts:hover .fa-check-circle{
-    transform: rotate(360deg);
-}
-
-
-.selections_menu_desserts:hover .cercle_validation {
-    width: 17%;
-}
 
 
 @keyframes apparition_1{
@@ -182,6 +142,7 @@ section{
     margin-bottom: 20px;
     margin-top: auto;
     margin-left: 15px;
+    text-overflow: ellipsis;
 }
 
 .selections_menu_plats{
@@ -277,6 +238,58 @@ section{
     
 }
 
+.cercle_validation{
+    background-color: #99e2d0;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    transition: all 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-check-circle{
+    transform: rotate(180deg);
+    color: white;
+    font-size:1.7em ;
+    transition: all 0.8s;
+    
+}
+
+.selections_menu_entrées:hover .fa-check-circle{
+    transform: rotate(360deg);
+}
+
+
+.selections_menu_entrées:hover .cercle_validation {
+    width: 17%;
+}
+
+
+.selections_menu_plats:hover .fa-check-circle{
+    transform: rotate(360deg);
+}
+
+
+.selections_menu_plats:hover .cercle_validation {
+    width: 17%;
+}
+
+.selections_menu_desserts:hover .fa-check-circle{
+    transform: rotate(360deg);
+}
+
+
+.selections_menu_desserts:hover .cercle_validation {
+    width: 17%;
+}
 
 
 #bouton{
@@ -360,6 +373,90 @@ footer{
 
 
 
+@media all and (max-width:1128px){
+    #carte{
+        display: flex;
+        flex-direction: column;
+        height: 1560px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 23px;
+    }
+
+    #header_card{
+        top: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .entrées_plats_desserts{
+        width: 92%;
+        margin-top: 36px;
+    }
+    .entrées_plats_plats{
+        width: 92%;
+        margin-top: 36px;
+    }
+    .entrées_plats_entrées{
+        width: 92%;
+        margin-top: 36px;
+    }
+    footer{
+        position: absolute;
+        top: 2064px;
+
+    }
+    #bouton{
+        position: absolute;
+        bottom: 100px;
+    }
+    
+    .cercle_validation{
+        visibility: hidden;
+    }
+    .selections_menu_entrées:hover{
+        background-color: #99e2d0;
+        color: whitesmoke;
+        
+    }
+    .selections_menu_plats:hover{
+        background-color: #99e2d0;
+        color: whitesmoke;
+        
+    }
+    .selections_menu_desserts:hover{
+        background-color: #99e2d0;
+        color: whitesmoke;
+        
+    }
+
+    .selections_menu_entrées:hover .prix{
+        transform: translateX(0px);
+        
+    }
+    .selections_menu_plats:hover .prix{
+        transform: translateX(0px);
+        
+    }
+    
+    .selections_menu_desserts:hover .prix{
+        transform: translateX(0px);
+        
+    }
+    
+    /*.selections_menu_entrées p{
+        width: 60%;
+    }
+
+    .selections_menu_plats p{
+        width: 60%;
+    }
+
+    .selections_menu_desserts p{
+        text-overflow: fade(3%);
+    }*/
+}
 
 
 
