@@ -10,16 +10,17 @@ header{
     justify-content: center;
     position: relative;
 }
+
 header a{
-    width: 100px;
+ font-size: 1.2em;
+ color: black;
+ text-decoration: none;
+ position: absolute;
+ top: 20px;
+ left: 20px;
+ font-weight: bold;
 }
-.fa-square-arrow-left{
-    font-size: 1.7em;
-    color: black;
-    position:absolute;
-    top: 26px;
-    left: 26px;
-}
+
 #logo{
     display: flex;
     justify-content: center;
