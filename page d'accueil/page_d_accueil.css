@@ -359,3 +359,13 @@ footer{
         }
 
 }
+
+@media all and (min-width: 1366px) {
+    body {
+        margin: auto;
+        max-width: 1370px;
+    }
+    #titre-restaurant{
+        visibility: hidden;
+    }
+}
